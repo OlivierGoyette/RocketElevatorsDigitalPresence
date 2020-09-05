@@ -1,0 +1,32 @@
+.btn-warning1 {
+    color: #212529;
+    background-color: #012ca1;
+    border-color: #012ca1;
+  }
+
+  .btn-warning1:hover {
+    color: #212529;
+    background-color: #000000;
+    border-color: #000000;
+  }
+  .btn-GetaQuote{
+    color: #212529;
+    background-color: #309c35;
+    border-color: #309c35;
+  }
+  .btn-GetaQuote:hover {
+    color: #212529;
+    background-color: #012ca1;
+    border-color: #012ca1;
+  }
+
+  .Eco{
+      color:rgb(0,255,0)
+  }
+
+  .Sky{
+
+    color:rgb(0, 204, 255)
+  }
+
+ 
