@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Rocket Elevator</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Web Site of selling elevators with workforce" content="" />
+		<meta name="Olivier Goyette" content="Rocket Elevator [www.goyette.club]" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -27,6 +27,7 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		
 		<!-- PAGE BTN COLOR -->
 		<link href="Custom/Rocket Elevator.css" rel="stylesheet" type="text/css" />
 		<link href="Custom/darkgrey-ContactUs.css" rel="stylesheet" type="text/css" />
@@ -119,6 +120,7 @@
 									
 									Add .external for an external link!
 								-->
+								<!-- TOP NAV -->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
 									<li class="active">
 										<!-- HOME -->
@@ -126,11 +128,26 @@
 											HOME
 										</a>
 									</li>
-									<li><!-- SERVICES -->
-										<a href="#services" fs-50>
-											SERVICES
-										</a>
-									</li>
+									<!-- SERVICES -->
+									
+										<li class="dropddown">
+											<a class="dropdownMenuButton" href="#services" fs-50>
+												SERVICES
+											</a>
+											<ul class="dropdown-menu">
+												<li>
+													<a class="active" href="index-Residential.html" fs-50>
+														RESIDENTIAL
+													</a>
+												</li>
+												<li>
+													<a class="active" href="index-Corporate.html" fs-50>
+														COMMERCIAL
+													</a>
+												</li>
+											</ul>
+										</li>
+
 									<li><!-- Portfolio -->
 										<a href="#Portfolio" fs-50>
 											PORTFOLIO
@@ -162,8 +179,6 @@
 				<!-- /Top Nav -->
 			
 			</div>
-
-
 
 			<!-- REVOLUTION SLIDER -->
 			<div class="slider fullwidthbanner-container roundedcorners">
@@ -201,7 +216,7 @@
 						<!-- SLIDE 1  -->
 						<li data-transition="parallaxtobottom" data-slotamount="7" data-masterspeed="600"  data-saveperformance="off"  data-title="GET A QUOTE">
 							<!-- MAIN IMAGE -->
-							<img src="demo_files/images/bluewall4.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+							<img src="assets/images/Home/bluewall4.jpg"  alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 
 							<div class="tp-caption white_big skewfromleft tp-resizeme"
 								data-x="100"
@@ -246,11 +261,11 @@
 								data-endelementdelay="0.1"
 								data-endspeed="300"
 								style="z-index: 4;">
-									<img src="../../Rocket_Elevator_Assets/Real-Bedard.png" alt="">
+									<img src="assets/images/Home/Real-Bedard.png" alt="">
 							</div>
 
 							<div class="tp-caption skewfromleft tp-resizeme  un-button-2-lg"
-								data-x="300"
+								data-x="250"
 								data-y="300" 
 								data-speed="300"
 								data-start="2500"
@@ -262,7 +277,7 @@
 								data-endspeed="300"
 
 								style="z-index: 5; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-GetaQuote btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-mystyle1 btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
 							<div class="tp-caption sfb tp-resizeme"
@@ -277,10 +292,9 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
-									<a class="btn btn-GetaQuote btn-lg" href="index-Get a Quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
+									<a class="btn btn-mystyle1 btn-lg" href="index-Get a Quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 						</li>
-
 						<!-- SLIDE 2  -->
 						<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="ECO FRIENDLY">
 							<!-- MAIN IMAGE -->
@@ -332,31 +346,27 @@
 								data-endelementdelay="0.1"
 								data-endspeed="500"
 								style="z-index: 4; max-width: auto;">
-								<img src="../../Rocket_Elevator_Assets/MarcBoucher.png" alt="">
+								<img src="assets/images/Home/MarcBoucher.png" alt="">
 									
 							</div>
 
 							<div class="tp-caption sfb tp-resizeme"
-								data-x="250"
+								data-x="500"
 								data-y="410" 
-								data-speed="500"
-								data-start="1500"
-								data-easing="Power3.easeIn"
+								data-speed="300"
+								data-start="2500"
+								data-easing="Power3.easeInOut"
 								data-splitin="none"
 								data-splitout="none"
-								data-elementdelay="1"
+								data-elementdelay="0.1"
 								data-endelementdelay="0.1"
 								data-endspeed="500"
-								style="z-index: 4; max-width: auto;">
-									<a class="btn btn-GetaQuote btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+									<a class="btn btn-mystyle1 btn-lg" href="index-Residential.html">RESIDENTIAL &nbsp; <i class="fa fa-angle-right"></i></a>
 							</div>
 
-
-
-							
-							
 						</li>
-							<!-- SLIDE 3  -->
+						<!-- SLIDE 3  -->
 							<li data-transition="parallaxtotop" data-slotamount="7" data-masterspeed="300"  data-saveperformance="off" data-title="FUTUR INNOVATION">
 								<!-- MAIN IMAGE -->
 								<img src="assets/images/Home/AdobeStock_53477661.jpeg" alt="cover image"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
@@ -395,66 +405,57 @@
 									Our team is ready for any eventuality.
 								</div>
 	
+
 								<div class="tp-caption sfb tp-resizeme"
-									data-x="50"
-									data-y="410" 
-									data-speed="500"
-									data-start="1500"
-									data-easing="Power3.easeIn"
-									data-splitin="none"
-									data-splitout="none"
-									data-elementdelay="1"
-									data-endelementdelay="0.1"
-									data-endspeed="500"
-									style="z-index: 4; max-width: auto;">
-										<a class="btn btn-GetaQuote btn-lg" href="#services">OUR SERVICES &nbsp; <i class="fa fa-angle-right"></i></a>
+								data-x="300"
+								data-y="410" 
+								data-speed="300"
+								data-start="2500"
+								data-easing="Power3.easeInOut"
+								data-splitin="none"
+								data-splitout="none"
+								data-elementdelay="0.1"
+								data-endelementdelay="0.1"
+								data-endspeed="500"
+								style="z-index: 6; max-width: auto; max-height: auto; white-space: nowrap;">
+									<a class="btn btn-mystyle1 btn-lg" href="index-Corporate.html">CORPORATE &nbsp; <i class="fa fa-angle-right"></i></a>
 								</div>
 	
 
 						</li>
 					</ul>
-
 				</div>
 			</div>
 			<!-- /REVOLUTION SLIDER -->
 
-
 			<hr class="m-0" /><!-- 1px line separator -->
 
-
-			<!-- BUTTON CALLOUT -->
+			<!-- RUBAN CONTACT US -->
 			<a href="#contact" class="btn btn-xlg btn-dark fs-20 fullwidth m-0 rad-0 p-40">
 				<span class="font-lato fs-30">
 					Did Rocket Elevator convinced you? 
 					<strong>Contact us &raquo;</strong>
 				</span>
 			</a>
-			<!-- /BUTTON CALLOUT -->
+			<!-- /RUBAN CONTACT US -->
 
-
-			
 			<!-- Services -->
 			<section id="services">
 				<div class="container">
-							<!--Our Awards-->
-					<div class="row">
-						<div class="col-sm-4">
-								<span class="image-hover-icon image-hover-dark"><!-- image-hover-light | image-hover-dark -->
-									<i class="fa fa-vimeo-square"><!-- video icon --></i>
-								</span>
-								<img class="img-fluid" src="assets/images/Home/Awards3.jpg" alt="img" />
-							</a>
-
-							<h3 class="mt-10">Our Awards</h3>
-							<p> Last year we won many awards from the United States Building Association		
-							<ul>
-								<li> 2A Continental Architectural </li>
-								<li> Architizer A+ Awards </li>
-								<li> Aga Khan Award for Architecture </li>
-							</ul>
 							
-							</p>
-							<a href="#" class="btn btn-default">THE BENEFITS</a>
+					<div class="row">
+							<!--Our Awards-->
+						<div class="col-sm-4">	
+								<img class="img-fluid" src="assets/images/Home/Awards3.jpg" alt="img" />
+								<h3 class="mt-10">Our Awards</h3>
+								<p> Last year we won many awards from the United States Building Association		
+								<ul>
+									<li> 2A Continental Architectural </li>
+									<li> Architizer A+ Awards </li>
+									<li> Aga Khan Award for Architecture </li>
+								</ul>
+								</p> 
+								 <a href="./index.html#Portfolio" class="btn btn-default" > Our Awards</a> 
 						</div>
 							<!--Quick Installation Residential-->
 						<div class="col-sm-4">
@@ -477,10 +478,7 @@
 			</section>
 			<!-- /Services -->
 
-			
-
-
-			<!-- Parallax -->
+			<!-- RUBAN GIF QUOTE -->
 			<section class="parallax parallax-1" style="background-image: url('assets/images/Home/Parral-Gif.gif');">
 				<div class="overlay dark-5"><!-- dark overlay [1 to 9 opacity] --></div>
 
@@ -489,16 +487,14 @@
 					<div class="text-center">
 						<h2 class="fs-40 fw-300"> Innovator in buildings Since 1976</h2>
 						<a class="btn-mystyle" href="/index-Get a Quote.html">REQUEST A QUOTE <i class="fa fa-angle-right"></i></a> 
-						
+						<a class="btn-mystyle" href="#contact">Contact Us <i class="fa fa-angle-right"></i></a> 
 					</div>
 
 				</div>
 			</section>
-			<!-- /Parallax -->
-<!-- btn btn-warning1 btn-lg -->
+			<!-- /RUBAN GIF QUOTE -->
 
-
-			<!-- PORTFOLIO -->
+		<!-- PORTFOLIO -->
 			<section id="Portfolio">
 				<div class="container">
 
@@ -516,8 +512,8 @@
 					</div>
 
 				</div>
-				<!-- PORTFOLIO  1-12-->
-				<div id="portfolio" class="portfolio-nogutter">
+				<!-- PORTFOLIO 1-12-->
+				<div id="FolioPort" class="portfolio-nogutter">
 
 						<div class="row mix-grid">
 										<!--Architect Project P1-->
@@ -650,7 +646,7 @@
 
 							</div><!-- /item -->
 
-										<!-- SteamPunk ART P5-->	
+										<!-- #ElevatorAwards P5-->	
 							<div class="col-md-3 col-sm-3 mix Contemporary"><!-- item -->
 
 								<div class="item-box">
@@ -660,7 +656,7 @@
 											<span class="inner">
 
 												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/Home/Steampunk.jpg" data-plugin-options='{"type":"image"}'>
+												<a class="ico-rounded lightbox" href="assets/images/Home/elevator19.jpg" data-plugin-options='{"type":"image"}'>
 													<span class="fa fa-plus fs-20"></span>
 												</a>
 
@@ -668,14 +664,14 @@
 											</span>
 										</span>
 
-										<img class="img-fluid" src="assets/images/Home/Steampunk.jpg" width="600" height="399" alt="">
+										<img class="img-fluid" src="assets/images/Home/elevator19.jpg" width="600" height="399" alt="">
 									</figure>
 
 									<div class="item-box-desc">
-										<h3>Steampunk Development</h3>
+										<h3>ElevatorAwards 2019</h3>
 										<ul class="list-inline categories m-0">
-											<li><a>Steampunk</a></li>
-											<li><a>Art</a></li>
+											<li><a>Our </a></li>
+											<li><a>Awards</a></li>
 										</ul>
 									</div>
 
@@ -850,7 +846,7 @@
 								</div>
 
 							</div><!-- /item -->
-										<!-- Moderne Elevator P11 -->
+										<!-- Awards P11 -->
 							<div class="col-md-3 col-sm-3 mix Contemporary"><!-- item -->
 
 								<div class="item-box">
@@ -860,7 +856,7 @@
 											<span class="inner">
 
 												<!-- lightbox -->
-												<a class="ico-rounded lightbox" href="assets/images/Home/Modern ele.jpg" data-plugin-options='{"type":"image"}'>
+												<a class="ico-rounded lightbox" href="assets/images/Home/awards elev.jpg" data-plugin-options='{"type":"image"}'>
 													<span class="fa fa-plus fs-20"></span>
 												</a>
 
@@ -868,14 +864,14 @@
 											</span>
 										</span>
 
-										<img class="img-fluid" src="assets/images/Home/Modern ele.jpg" width="600" height="399" alt="">
+										<img class="img-fluid" src="assets/images/Home/awards elev.jpg" width="600" height="399" alt="">
 									</figure>
 
 									<div class="item-box-desc">
-										<h3>Modern Development</h3>
+										<h3>Our Team Involved</h3>
 										<ul class="list-inline categories m-0">
-											<li><a> Modern </a></li>
-											<li><a> Development </a></li>
+											<li><a> Our Team </a></li>
+											<li><a> Awards 2019 </a></li>
 										</ul>
 									</div>
 
@@ -919,12 +915,10 @@
 
 				</div>
 			</section>
-			<!-- /PORTFOLIO -->
+				<!-- PORTFOLIO 1-12-->
+		<!-- /PORTFOLIO -->
 
-
-
-
-			<!-- Testimonials -->
+			<!-- CEO and Employee -->
 			<section class="section-xs dark">
 				<div class="container">
 
@@ -957,11 +951,7 @@
 
 				</div>
 			</section>
-			<!-- /Testimonials -->
-
-
-
-
+			<!-- /CEO and Employee -->
 
 			<!-- News -->
 			<section id="news">
@@ -1166,33 +1156,32 @@
 							</a>
 						</li>
 							
-						<
+						
 					</ul>
 
 				</div>
 			</section>
 			<!-- /Clients -->
 
-
-
-
-			<!-- CONTACT -->
+			<!-- RUABN CONTACT US -->
 			<section id="contact">
 				<div class="container">
 
 					<header class="text-center mb-60">
 						<h2>Contact Us</h2>
-						<p class="lead font-lato"> <li>4468 Wellington St Suite 204, Verdun, Quebec H4G 1W5</li>
-							                           <li>(581) 701-0303</li>
-													   <li>info@codeboxx.biz</li>
+						
+							<span class="block"><i class="fa fa-map-marker"></i><a target="_blank" href="https://www.google.com/maps?q=google+maps+codeboxx+montreal&rlz=1C1CHBF_frCA899CA899&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjm5LWR1dLrAhVMlFkKHWGoC2AQ_AUoAXoECBYQAw"> 4468 Wellington St Suite 204, Montréal, Quebec H4G 1W5 </a></span>
+							<span class="block"><i class="fa fa-phone"></i><a href="tel:581-701-0303"> (581) 701-0303</a></span>
+							<span class="block"><i class="fa fa-envelope"></i><a href="mailto:info@codeboxx.biz"> info@codeboxx.biz</a></span>
 						</p>
 						<hr />
 					</header>
-
-
+				</div>
+			<!-- /RUABN CONTACT US -->		
+				<div class="container">
 					<div class="row">
-
-						<!-- FORM -->
+				
+						<!-- MESSAGE -->
 						<div class="col-md-8 col-sm-8">
 
 							<h3>
@@ -1314,18 +1303,13 @@
 
 								</fieldset>
 
-								<div class="row">
-									<div class="col-md-12">
-										<button type="submit" class="btn btn-primary"><i class="fa fa-check"></i> SEND MESSAGE</button>
-									</div>
-								</div>
+								
 							</form>
 
 						</div>
-						<!-- /FORM -->
+						<!-- /MESSAGE -->
 
-
-						<!-- INFO -->
+						<!-- GMAPS and Coord -->
 						<div class="col-md-4 col-sm-4">
 
 							<h2>Visit Us</h2>
@@ -1344,28 +1328,24 @@
 								h-550
 								h-600
 							-->
-							<a target ="_blank" href="https://www.google.com/maps?q=google+maps+codeboxx+montreal&rlz=1C1CHBF_frCA899CA899&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjm5LWR1dLrAhVMlFkKHWGoC2AQ_AUoAXoECBYQAw" />
+							<a target ="_blank" href="https://www.google.com/maps?q=google+maps+codeboxx+montreal&rlz=1C1CHBF_frCA899CA899&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjm5LWR1dLrAhVMlFkKHWGoC2AQ_AUoAXoECBYQAw" >
 								<img class= "map" src="assets/images/Home/google maps.PNG" />
 						</a>
 							<hr />
 
 							<p>
-								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> 4468 Wellingtion St suite 204, Montreal, Canada</span>
-								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:1800-555-1234">(581) 701-0303</a></span>
-								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:mail@yourdomain.com">info@codeboxx.biz</a></span>
+								<span class="block"><strong><i class="fa fa-map-marker"></i> Address:</strong> <a target="_blank" href="https://www.google.com/maps?q=google+maps+codeboxx+montreal&rlz=1C1CHBF_frCA899CA899&um=1&ie=UTF-8&sa=X&ved=2ahUKEwjm5LWR1dLrAhVMlFkKHWGoC2AQ_AUoAXoECBYQAw"> 4468 Wellingtion St suite 204, Montreal, Canada </a></span>
+								<span class="block"><strong><i class="fa fa-phone"></i> Phone:</strong> <a href="tel:581-701-0303">(581) 701-0303</a></span>
+								<span class="block"><strong><i class="fa fa-envelope"></i> Email:</strong> <a href="mailto:info@codeboxx.biz">info@codeboxx.biz</a></span>
 							</p>
 
 						</div>
-						<!-- /INFO -->
+						<!-- /GMAPS and Coord -->
 
 					</div>
 
 				</div>
 			</section>
-			<!-- /CONTACT -->
-
-
-
 
 			<!-- FOOTER -->
 			<footer id="footer">
@@ -1387,28 +1367,6 @@
 						</div>
 						<!-- /col #1 -->
 
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">STAY ALERT</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
-
 					</div>
 
 
@@ -1417,9 +1375,9 @@
 				<div class="copyright">
 					<div class="container">
 						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>Terms &amp; Conditions</li>
 							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
+							<li>Privacy</li>
 						</ul>
 						&copy; All Rights Reserved, Rocket Elevator LTD
 					</div>

@@ -21,7 +21,9 @@
   }
 
   .Eco{
-      color:rgb(0,255,0)
+      color:rgb(0,255,0);
+      font-size: 30;
+      
   }
 
   .Sky{
@@ -31,41 +33,51 @@
   .btn-mystyle{
     display: inline-block;
     border-radius: 25px;
-    background-color: #f4511e;
+    background-color: #012ca1a8;
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 20px;
     padding: 10px;
-    width: 200px;
-    transition: all 0.5s;
+    width: 300px;
+    opacity: 1;
+    transition: all 1.2s;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  .btn-mystyle :hover{
+    opacity: 0.6;
+    transition: all 1.2s;
+  }
+
+  .btn-mystyle1{
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #309c35;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 175px;
+    opacity: 1;
+    transition: all 1.2s;
     cursor: pointer;
     margin: 5px;
   }
-  .btn-mystyle span{
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    border-radius: 20%;
-    transition: 0.5s;
+  .btn-mystyle1 :hover{
+    opacity: 0,6;
+    transition: all 1.2s;
   }
-  .btn-mystyle span:after{
-    content: '\00bb';
-    position: absolute;
-    opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
-  }
-  .btn-mystyle:hover span{
-    padding-right: 25px;
-  }
-  .btn-mystyle:hover span:after{
-    opacity: 1;
-    right: 0;
-  }
+
  /* span = */
+ p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
+  margin-bottom: 0px;
+}
   
-  
+margin-bottom{
+
+}
 
  

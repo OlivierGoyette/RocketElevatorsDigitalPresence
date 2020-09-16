@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Rocket Elevator - Get A Quote</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Get a Quote Section" content="" />
+		<meta name="Olivier Goyette" content="Rocket Elevator [www.goyette.club]" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -26,9 +26,6 @@
 		<!-- PAGE BTN COLOR -->
 		<link href="Custom/Rocket Elevator.css" rel="stylesheet" type="text/css" />
 		<link href="Custom/darkgrey-ContactUs.css" rel="stylesheet" type="text/css" />
-
-
-
 
 	</head>
 
@@ -53,10 +50,40 @@
 		BACKGROUND IMAGE [together with .boxed class]
 		data-background="assets/images/Home/boxed_background/1.jpg"
 	-->
-	<body class="smoothscroll enable-animation">
 
+	<body class="smoothscroll enable-animation">
+		<style>
+			
+			body {
+  			background-image: url("assets/images/Quote/Sans\ titre-1.png");
+			}
+			
+			label {
+				color: black;
+				font-size: ;
+			}
+
+			h2 {
+				color: black;
+			}
+
+			p{
+				color:black
+				
+			}
+
+			div.botpage {
+				margin-bottom: 30px;
+			}
+			
+			div.container1{
+				margin-top: 20px;
+			}
+
+
+		</style>
 		<!-- wrapper -->
-		<div id="wrapper">
+		<div id="wrapper" >
 
 			<!-- 
 				AVAILABLE HEADER CLASSES
@@ -122,10 +149,23 @@
 											HOME
 										</a>
 									</li>
-									<li><!-- SERVICES -->
-										<a href="index.html#services" fs-50>
+									<!--SERVICES-->
+									<li class="dropddown">
+										<a class="dropdownMenuButton" href="index.html#services" fs-50 >
 											SERVICES
 										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="active" href="index-Residential.html" fs-50 >
+													RESIDENTIAL
+												</a>
+											</li>
+											<li>
+												<a class="active" href="index-Corporate.html" fs-50>
+													COMMERCIAL
+												</a>
+											</li>
+										</ul>
 									</li>
 									<li><!-- Portfolio -->
 										<a href="index.html#Portfolio" fs-50>
@@ -156,30 +196,19 @@
 					</div>
 				</header>
 				<!-- /Top Nav -->
-
-				
-					
-				
-
-
-
-
-
-
 			</div>
 
-
 			<!-- HOME -->
-			<section id="home" class="h-450" style="background:url('Rocket_Elevator_Assets/quote_elevator.jpg')">
+			<section id="home" class="h-450" style="background:url('assets/images/Quote/quote_elevator.jpg')">
 				<div class="display-table">
 					<div class="display-table-cell vertical-align-middle">
 						
 						<div class="container text-center">
 							
 							
-							<h1 class="m- fs-50 fw-300 wow fadeInUp " data-wow-delay="0.4s" style="color:rgb(0, 0, 0)"> <strong> Quote Form </strong></h1>
+							<h1 class="m- fs-60 fw-300 wow fadeInUp " data-wow-delay="0.4s" style="color:rgb(0, 0, 0)"> <strong> Quote Form </strong></h1>
 
-							<p class="lead font-lato fs-30 wow fadeInUp " data-wow-delay="0.7s"  style="color:black" > <strong> Let's go together during this whole process </strong> </p>
+							<p class="lead font-lato fs-40 wow fadeInUp " data-wow-delay="0.7s"  style="color:black" > <strong> Let's go together during this whole process </strong> </p>
 							
 							
 
@@ -198,13 +227,11 @@
 					<strong>Thank You!</strong> Your message successfully sent!
 				</div><!-- /Alert Success -->
 
-
 				<!-- Alert Failed -->
 				<div id="alert_failed" class="alert alert-danger mb-30">
 					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 					<strong>[SMTP] Error!</strong> Internal server error!
 				</div><!-- /Alert Failed -->
-
 
 				<!-- Alert Mandatory -->
 				<div id="alert_mandatory" class="alert alert-danger mb-30">
@@ -212,29 +239,23 @@
 					<strong>Sorry!</strong> You need to complete all mandatory (*) fields!
 				</div><!-- /Alert Mandatory -->
 
-
-				<form action="php/contact.php" method="post" enctype="multipart/form-data">
+				<form action="php/contact.php" method="post" enctype="multipart/form-data" >
 					<fieldset>
 						<input type="hidden" name="action" value="contact_send" />
 
-
 						<!--Contact US-->
-						<div class="container">
-
-							<header class="text-center mb-60">
+						<div class="container1">
+							<header class="text-center xs-0">
 								<h2>Submission</h2>
-								</header>
+							</header>
 						</div>
-						<!--Contact US-->
-
-
-
+						<!--/Contact US-->
 
 						<!--Building Type-->
-						<div class="col-md-12 text-center">
+						<div class="col-md-12 text-center xs-10 ">
 							<p>Building Type</p>
 							
-							<select id="Building_Option" class="text-center form-group" >
+							<select id="Building_Option">
 								<option value="select">--- Select ---</option>
 								<option value="Residential">Residential</option>
 								<option value="Commercial">Commercial</option>
@@ -242,93 +263,98 @@
 								<option value="Hybrid">Hybrid</option>
 							</select>
 						</div>
-						<div class="container col-md-8">
-						
-								<!-- CASE -->
-
-							<div class="form-group"  id="ApartmentNumber">
+						<!--/Building Type-->
+						 
+						<!-- CASE -->
+						<div class="botpage">
+							<div class="text-center"  id="ApartmentNumber">
 								<label >Number of Appartements ?</label>
-								<input  type="number" name="ApartmentNumberVar" class="form-control" id="ApartmentNumberVar">
+								<input  type="number" name="ApartmentNumberVar" class="form-control-sm"  min="0" id="ApartmentNumberVar">
 							</div>
 
-							<div class="form-group" id="FloorNumber">
+							<div class="text-center" id="FloorNumber">
 								<label >Number of Floors ?</label>
-								<input  type="number" name="FloorNumberVar" class="form-control" id="FloorNumberVar">
+								<input  type="number" name="FloorNumberVar" class="form-control-sm" min="0" id="FloorNumberVar">
 							</div>
 
-							<div class="form-group" id="BasementNumber">
+							<div class="text-center" id="BasementNumber">
 								<label >Number of Basements ?</label>
-								<input  type="number" name="BasementNumberVar" class="form-control" id="BasementNumberVar">
+								<input  type="number" name="BasementNumberVar" class="form-control-sm" min="0" id="BasementNumberVar">
 							</div>
 
-							<div class="form-group" id="ParkingNumber">
+							<div class="text-center" id="ParkingNumber">
 								<label>Number of Parking Space ?</label>
-								<input  type="number" name="ParkingNumberVar" class="form-control" id="ParkingNumberVar" >
+								<input  type="number" name="ParkingNumberVar" class="form-control-sm" min="0" id="ParkingNumberVar" >
 							</div>
 
-							<div class="form-group" id = "CagEleNumber">
+							<div class="text-center" id = "CagEleNumber">
 								<label>Number of Elevator Cages ?</label>
-								<input  type="number" name="CagEleNumber1" class="form-control"  id = "CagEleNumber1">
+								<input  type="number" name="CagEleNumber1" class="form-control-sm" min="0" id = "CagEleNumber1">
 							</div>
 
-							<div class="form-group" id="OccupantNumber">
+							<div class="text-center" id="OccupantNumber">
 								<label>Number of Maximum Occupants per Floors ?</label>
-								<input type="number" name="OccupantNumberVar" class="form-control" id="OccupantNumberVar" >
+								<input type="number" name="OccupantNumberVar" class="form-control-sm" min="0" id="OccupantNumberVar" >
 							</div>
 
-							<div class="form-group" id="HoursNumber">
-								<label>Number of Hours of Activity ?</label>
-								<input required type="number" name="HoursNumberVar" class="form-control" min="4" max="24" id="HoursNumberVar">
+							<div class="text-center" id="HoursNumber">
+								<label>Number of Hours of Activity ? (Minimum 4 and Maximum 24)</label>
+								<input required type="number" name="HoursNumberVar" class="form-control-sm" min="4" max="24" id="HoursNumberVar">
 							</div>
 
-							<div class="form-group" id="RecommendEleNumber">
+							<div class="text-center" id="distinct">
+								<label >The number of distinct businesses ?</label>
+								<input  type="number" class="form-control-sm" min="0" >
+							</div>
+
+							<div class="text-center" id="tenant">
+								<label >The number of separate tenant companies ?</label>
+								<input  type="number" class="form-control-sm" min="0" >
+							</div>
+
+							<div class="text-center" id="RecommendEleNumber">
 								<label>Recommended amount of elevators ?</label>
-								<input  type="number" name="RecommendEleNumberVar" class= "form-control" id="RecommendEleNumberVar" readonly>
+								<input  type="number" name="RecommendEleNumberVar" class= "form-control-sm" id="RecommendEleNumberVar" readonly>
 							</div>
 
-							<div id="RadioType" class="col-md-12 text-center" style="display: none;">
-								<label>Cages Qualities</label>
-								<input type="radio"  name="RadioType1" value="7565" >
-								"Standard"
-		
-								<input type="radio" name="RadioType1" value="12345">
-								"Premium"
-		
-								<input type="radio" name="RadioType1" value="15400">
-								"Excelium"
-		
-							</div>
-
-							<div class="form-group" id="RadioType">
-								<label>Cost per cages</label>
-								<input  type="number" name="ElevaCostVar" class="form-control" id="ElevaCostVar" readonly>
-							</div>
-
-							<div class="form-group" id="WithoutTaxeNumber">
-								<label> Estimated price of your cages</label>
-								<input  type="number" name="TotaElevatorPrice"class="form-control" id="TotaElevatorPrice"  readonly>
-							</div>
-
-							<div class="form-group" id="TaxeTotalNumber" >
-								<label> Estimated price for installation</label>
-								<input  type="number" name="EstimInP" class="form-control" id="EstimInP"  readonly>
-							</div>
-							<div class="form-group" id="GrandTotal" >
-								<label> Grand Total</label>
-								<input  type="number" name="GrandTotal1" class="form-control" id="GrandTotal1"  readonly>
-							</div>
-						</div>		
 							
 
-					
+							<div id="RadioType" class="col-md-12 text-center" style="display: none; font-size: 20px; color: black;">
+								<div id="RadioType" class="col-md-12 text-center" style="display: none; font-size: 30px; color: black;">
+									<label>Cages Qualities</label>
+								</div>
+								<input type="radio"  name="RadioType1" value="7565" >
+								<strong>"Standard"</strong>
+		
+								<input type="radio" name="RadioType1" value="12345">
+								<strong>"Premium"</strong>
+		
+								<input type="radio" name="RadioType1" value="15400">
+								<strong>"Excelium"</strong>
+		
+							</div>
 
-				
+							<div class="text-center" id="RadioType">
+								<label>Cost per cages</label>
+								<input  type="number" name="ElevaCostVar" class="form-control-md" id="ElevaCostVar" readonly>
+							</div>
 
+							<div class="text-center" id="WithoutTaxeNumber">
+								<label> Estimated price of your cages</label>
+								<input  type="number" name="TotaElevatorPrice"class="form-control-md" id="TotaElevatorPrice"  readonly>
+							</div>
 
-
-			<!-- Get a Quote-->
+							<div class="text-center" id="TaxeTotalNumber" >
+								<label> Estimated price for installation</label>
+								<input  type="number" name="EstimInP" class="form-control-md" id="EstimInP"  readonly>
+							</div>
+							<div class="text-center" id="GrandTotal" >
+								<label> Grand Total</label>
+								<input  type="number" name="GrandTotal1" class="form-control-md" id="GrandTotal1"  readonly>
+							</div>
+						</div>		
+						<!-- /CASE -->	
 			
-
 			<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
@@ -342,61 +368,35 @@
 							<h3 class="letter-spacing-1">WHY US?</h3>
 
 							<!-- Small Description -->
-							<p>
+							<a>
 								Rocket Elevator is a dynamic and growing company. Our goal is to be with you during the whole process and to make sure everything is functional. Do not be afraid all our products are guaranteed for up to 2 years. We thank you for your trust for more than 40 years!
-							</p>
+							</a>
 							<h2>(581) 701-0303</h2>
 						</div>
+					</div>
+				</div>
 						<!-- /col #1 -->
 
-						<!-- col #2 -->
-						<div class="col-md-4">
-							<h3 class="letter-spacing-1">STAY ALERT</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
-							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
-							</form>
-							<!-- /Newsletter Form -->
-
-
-						</div>
-						<!-- /col #2 -->
-
-					</div>
-
-
-				</div>
-
+						<!-- col #2-->
 				<div class="copyright">
 					<div class="container">
 						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>Terms &amp; Conditions</li>
 							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
+							<li>Privacy</li>
 						</ul>
 						&copy; All Rights Reserved, Rocket Elevator LTD
 					</div>
 				</div>
-
+						<!-- /col #2-->
 			</footer>
 			<!-- /FOOTER -->
 
 		</div>
 		<!-- /wrapper -->
 
-
 		<!-- SCROLL TO TOP -->
 		<a href="#" id="toTop"></a>
-
 
 		<!-- PRELOADER -->
 		<div id="preloader">
@@ -405,13 +405,11 @@
 			</div>
 		</div><!-- /PRELOADER -->
 
-
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
 		<script src="assets/js/scripts.js"></script>
 		<script src="assets/js/Quote JS.js"></script>
-		
 		
 	</body>
 </html>

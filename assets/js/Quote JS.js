@@ -12,6 +12,10 @@
     $("#WithoutTaxeNumber").hide();        
     $("#TaxeTotalNumber").hide(); 
     $("#GrandTotal").hide();
+    $("#distinct").hide();
+    $("#tenant").hide();
+
+    
 
     $("#Building_Option").on("change", function(){
         var VarType = $("#Building_Option option:selected").val();
@@ -31,6 +35,8 @@
             $("#WithoutTaxeNumber ").hide();        
             $("#TaxeTotalNumber").hide();
             $("#GrandTotal").hide();
+            $("#distinct").hide();
+            $("#tenant").hide();
         }
         if(VarType == "Residential"){
             $("#ApartmentNumber").show();       
@@ -47,6 +53,8 @@
             $("#WithoutTaxeNumber ").show();        
             $("#TaxeTotalNumber").show();
             $("#GrandTotal").show();
+            $("#distinct").hide();
+            $("#tenant").hide();
         }
         if(VarType == "Commercial"){
             $("#ApartmentNumber").hide();       
@@ -63,6 +71,8 @@
             $("#WithoutTaxeNumber ").show();        
             $("#TaxeTotalNumber").show();
             $("#GrandTotal").show();
+            $("#distinct").show();
+            $("#tenant").hide();
         }
         if(VarType == "Corporate"){
             $("#ApartmentNumber").hide();       
@@ -79,6 +89,8 @@
             $("#WithoutTaxeNumber ").show();        
             $("#TaxeTotalNumber").show();
             $("#GrandTotal").show();
+            $("#distinct").hide();
+            $("#tenant").show();
         }
         if(VarType == "Hybrid"){
             $("#ApartmentNumber").hide();       
@@ -95,6 +107,8 @@
             $("#WithoutTaxeNumber ").show();        
             $("#TaxeTotalNumber").show();
             $("#GrandTotal").show();
+            $("#distinct").show();
+            $("#tenant").hide();
         }
     });
 
@@ -114,7 +128,6 @@
             var type = document.getElementById('type');
             var ET_NP = document.getElementById('EstimInP');
 
-
     function calcul(){
         var RadioType = $("input[name = 'RadioType1']:checked").val();
         if(RadioType == "7565"){
@@ -122,8 +135,7 @@
             EL_C.value = RadioType;
             TE_PR.value = EL_C.value * RC_NB.value;
             ET_NP.value = TE_PR.value * 0.10;
-            GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);
-            
+            GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);    
         }
         if(RadioType == "12345"){
 
@@ -131,7 +143,6 @@
             TE_PR.value = EL_C.value * RC_NB.value;
             ET_NP.value = TE_PR.value * 0.13;
             GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);
-
         }
         if(RadioType == "15400"){
 
@@ -139,17 +150,13 @@
             TE_PR.value = EL_C.value * RC_NB.value;
             ET_NP.value = TE_PR.value * 0.16;
             GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);  
-        
         }
     }
-
 
 function commercial()
         {
             RC_NB.value = CE_NB.value;
-            
         };
-
 function residential()
         {
             var ARE = AP_NB.value / FL_NB.value;
@@ -179,7 +186,6 @@ function Corporate_Hybrid()
             RC_NB.value = total;
         };
 
-
 $("input").on('keyup click', function (){
         var VarType = $("#Building_Option option:selected").val();
 
@@ -200,5 +206,3 @@ $("input").on('keyup click', function (){
                 calcul();
             }  
 });
-
-

@@ -3,8 +3,8 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Rocket Elevator - Residential</title>
-		<meta name="description" content="" />
-		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+		<meta name="Residential Services" content="" />
+		<meta name="Olivier Goyette" content="Rocket Elevator [www.goyette.club]" />
 
 		<!-- mobile settings -->
 		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
@@ -23,6 +23,10 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
+		<!-- PAGE BTN COLOR -->
+		<link href="Custom/Rocket Elevator.css" rel="stylesheet" type="text/css" />
+		<link href="Custom/darkgrey-ContactUs.css" rel="stylesheet" type="text/css" />
 	</head>
 
 	<!--
@@ -89,8 +93,8 @@
 						</button>
 
 						<!-- Logo -->
-						<a class="logo float-left " href="index Olivier.html">
-                            <img src="assets/images/Home/r2.png" alt="" />
+						<a class="logo float-left " href="index.html">
+                            <img src="assets/images/Residential/R2.png" alt="" />
 						</a>
 
 						<!-- 
@@ -115,10 +119,22 @@
 											HOME
 										</a>
 									</li>
-									<li><!-- SERVICES -->
-										<a href="index.html#services" style="color:black" fs-50>
+									<li class="dropddown">
+										<a class="dropdownMenuButton" style="color:black" href="index.html#services" fs-50>
 											SERVICES
 										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="active" href="index-Residential.html" fs-50 >
+													RESIDENTIAL
+												</a>
+											</li>
+											<li>
+												<a class="active" href="index-Corporate.html" fs-50 >
+													COMMERCIAL
+												</a>
+											</li>
+										</ul>
 									</li>
 									<li><!-- Portfolio -->
 										<a href="index.html#Portfolio" style="color:black" fs-50>
@@ -145,7 +161,6 @@
 
 							</nav>
 						</div>
-
 					</div>
 				</header>
 				<!-- /Top Nav -->
@@ -154,18 +169,17 @@
 
 
 			<!-- HOME -->
-			<section id="home" class="h-450" style="background:url('../../assets/images/Residential/Residential-elevators.png')">
+			<section id="home" class="h-450" style="background:url('assets/images/Residential/Residential-elevators.png')">
 				<div class="display-table">
 					<div class="display-table-cell vertical-align-middle">
 						
-						<div class="container text-center">
-							
-							
+						<div class="container text-center" >
+								
 							<h1 class="m-0 fs-50 fw-300 wow fadeInUp " data-wow-delay="0.4s" style="color:black"> <strong> For Residential Building </strong></h1>
 
 							<p class="lead font-lato fs-30 wow fadeInUp " data-wow-delay="0.7s"  style="color:black" > <strong>We are here to carry out this project together</strong> </p>
 							
-							
+							<a class="btn btn-mystyle btn-lg" href="index-Get a Quote.html">GET A QUOTE &nbsp; <i class="fa fa-angle-right"></i></a>
 
 						</div>
 
@@ -188,8 +202,9 @@
 						<hr />
 					</header>
 
-					<!-- FEATURED BOXES 3 -->
+					<!-- FEATURED BOXES 1-4 -->
 					<div class="row">
+						<!-- FEATURE 1-->
 						<div class="col-md-3 col-6">
 							<div class="text-center">
 							
@@ -198,6 +213,9 @@
 								<p>Our elevators are very safe for your home and you are connected to the central base of Rocket Elevator.</p>
 							</div>
 						</div>
+						<!-- /FEATURE 1-->
+
+						<!-- FEATURE 2-->
 						<div class="col-md-3 col-6">
 							<div class="text-center">
 								<img src="assets/images/Residential/safety-badge-new.png" width="110px"> 
@@ -205,6 +223,9 @@
 								<p>Our system is foolproof to anyone who tries to break into it.</p>
 							</div>
 						</div>
+						<!-- /FEATURE 2-->
+
+						<!-- FEATURE 3-->
 						<div class="col-md-3 col-6">
 							<div class="text-center">
 								<img src="assets/images/Residential/Support-1300x731.png" width="110px"> 
@@ -212,6 +233,9 @@
 								<p>Our team is with you 24/24 to assist you in the event of a major problem or deficiency.</p>
 							</div>
 						</div>
+						<!-- /FEATURE 3-->
+
+						<!-- FEATURE 4-->
 						<div class="col-md-3 col-6">
 							<div class="text-center">
 								<img src="assets/images/Residential/smart.png" width="55px"> 
@@ -219,13 +243,15 @@
 								<p>Our equipment now supports connectivity with your mobile devices without any problem. Directly connected with your Wifi network! </p>
 							</div>
 						</div>
+						<!-- /FEATURE 4-->
 					</div>
-					<!-- /FEATURED BOXES 3 -->
+					<!-- /FEATURED BOXES 1-4 -->
 
 					
 				</div>
 			</section>
 			<!-- /FEATURES -->
+
 			<!-- Services -->
 			<section id="serviceResidential">
 				<div class="container">
@@ -265,12 +291,6 @@
 			</section>
 			<!-- /Services -->
 
-		
-
-
-
-
-
 			<!-- FOOTER -->
 			<footer id="footer">
 				<div class="container">
@@ -293,19 +313,9 @@
 
 						<!-- col #2 -->
 						<div class="col-md-4">
-							<h3 class="letter-spacing-1">STAY ALERT</h3>
-
-							<!-- Newsletter Form -->
-							<p>Subscribe to Our Newsletter to get Important News & Offers</p>
-
+							
 							<form class="validate" action="php/newsletter.php" method="post" data-success="Subscribed! Thank you!" data-toastr-position="bottom-right">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-									<input type="email" id="email" name="email" class="form-control required" placeholder="Enter your Email">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="submit">Subscribe</button>
-									</span>
-								</div>
+								
 							</form>
 							<!-- /Newsletter Form -->
 
@@ -321,9 +331,9 @@
 				<div class="copyright">
 					<div class="container">
 						<ul class="float-right m-0 list-inline mobile-block">
-							<li><a href="#">Terms &amp; Conditions</a></li>
+							<li>Terms &amp; Conditions</li>
 							<li>&bull;</li>
-							<li><a href="#">Privacy</a></li>
+							<li>Privacy</li>
 						</ul>
 						&copy; All Rights Reserved, Rocket Elevator LTD
 					</div>
@@ -351,10 +361,7 @@
 		<!-- JAVASCRIPT FILES -->
 		<script>var plugin_path = 'assets/plugins/';</script>
 		<script src="assets/plugins/jquery/jquery-3.3.1.min.js"></script>
-
 		<script src="assets/js/scripts.js"></script>
 		
-		<!-- STYLESWITCHER - REMOVE -->
-		<script async src="demo_files/styleswitcher/styleswitcher.js"></script>
 	</body>
 </html>
