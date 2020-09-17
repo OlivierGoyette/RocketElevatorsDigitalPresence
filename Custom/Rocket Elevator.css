@@ -9,12 +9,12 @@
     background-color: #000000;
     border-color: #000000;
   }
-  .btn-GetaQuote{
+  .btn-Submit{
     color: #212529;
     background-color: #309c35;
     border-color: #309c35;
   }
-  .btn-GetaQuote:hover {
+  .btn-Submit:hover {
     color: #212529;
     background-color: #012ca1;
     border-color: #012ca1;
@@ -76,8 +76,13 @@
   margin-bottom: 0px;
 }
   
-margin-bottom{
-
+.a.submit{
+  color:black
 }
+
+.a.submit :hover{
+  color:white
+}
+
 
  
