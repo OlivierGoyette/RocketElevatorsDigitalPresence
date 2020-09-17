@@ -9,17 +9,6 @@
     background-color: #000000;
     border-color: #000000;
   }
-  .btn-submit{
-    color: #000000;
-    background-color: #309c35;
-    border-color: #309c35;
-  }
-  .btn-submit:hover {
-    color: #ffffff;
-    background-color: #034703;
-    border-color: #034703;
-  }
-
   .Eco{
       color:rgb(0,255,0);
       font-size: 30;
@@ -70,7 +59,24 @@
     opacity: 0,6;
     transition: all 1.2s;
   }
-
+  .btn-submit{
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #012ca1a8;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    width: 100px;
+    opacity: 1;
+    transition: all 1.2s;
+    cursor: pointer;
+    margin: 5px;
+    
+  }
+  .btn-submit :hover{
+    opacity: 0.6;
+    transition: all 1.2s;
  /* span = */
  p, pre, ul, ol, dl, dd, blockquote, address, table, fieldset, form {
   margin-bottom: 0px;
