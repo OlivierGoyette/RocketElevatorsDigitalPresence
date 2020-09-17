@@ -1,5 +1,5 @@
 .btn-warning1 {
-    color: #212529;
+    color: #ffffff;
     background-color: #012ca1;
     border-color: #012ca1;
   }
@@ -9,15 +9,15 @@
     background-color: #000000;
     border-color: #000000;
   }
-  .btn-Submit{
-    color: #212529;
+  .btn-submit{
+    color: #000000;
     background-color: #309c35;
     border-color: #309c35;
   }
-  .btn-Submit:hover {
-    color: #212529;
-    background-color: #012ca1;
-    border-color: #012ca1;
+  .btn-submit:hover {
+    color: #ffffff;
+    background-color: #034703;
+    border-color: #034703;
   }
 
   .Eco{
