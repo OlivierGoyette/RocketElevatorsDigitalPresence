@@ -1,3 +1,5 @@
+ 
+            /* Tout mes sections(Case qui s'affiche selon la selection) tout en HIDE */
     $("#ApartmentNumber").hide();       
     $("#FloorNumber").hide();         
     $("#BasementNumber").hide();          
@@ -14,9 +16,10 @@
     $("#GrandTotal").hide();
     $("#distinct").hide();
     $("#tenant").hide();
+            /* Tout mes sections(Case qui s'affiche selon la selection) tout en HIDE */
 
-    
 
+             /* Show/Hide de tout mes cases selon la selection */
     $("#Building_Option").on("change", function(){
         var VarType = $("#Building_Option option:selected").val();
 
@@ -111,7 +114,11 @@
             $("#tenant").hide();
         }
     });
+             /* éShow/Hide de tout mes cases selon la selection */
 
+
+             /* Tout les 'var' sont mes variables dans mes functions de calculs  */
+             /* Tout les variables en rouge sont mes ID et Names de mon index-Get a Quote  */
             var AP_NB = document.getElementById('ApartmentNumberVar');              
             var FL_NB = document.getElementById('FloorNumberVar');
             var BS_NB = document.getElementById('BasementNumberVar');
@@ -127,9 +134,16 @@
             var GT = document.getElementById('GrandTotal1');
             var type = document.getElementById('type');
             var ET_NP = document.getElementById('EstimInP');
+             /* /Tout les 'var' sont mes variables dans mes functions de calculs  */
+             /* /Tout les variables en rouge sont mes ID et Names de mon index-Get a Quote  */
 
+
+            /* Différentes qualités d'ascenseur */
+            /* Calcul le nombre d'ascenseur selon la qualité */
     function calcul(){
         var RadioType = $("input[name = 'RadioType1']:checked").val();
+
+            /* Standards */
         if(RadioType == "7565"){
 
             EL_C.value = RadioType;
@@ -137,6 +151,9 @@
             ET_NP.value = TE_PR.value * 0.10;
             GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);    
         }
+            /* /Standards */
+            
+            /* Premium */
         if(RadioType == "12345"){
 
             EL_C.value = RadioType;
@@ -144,6 +161,9 @@
             ET_NP.value = TE_PR.value * 0.13;
             GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);
         }
+            /* /Premium */
+
+            /* Excelium */
         if(RadioType == "15400"){
 
             EL_C.value = RadioType;
@@ -151,12 +171,20 @@
             ET_NP.value = TE_PR.value * 0.16;
             GT.value = parseInt(TE_PR.value) + parseInt(ET_NP.value);  
         }
+            /* /Excelium */
     }
+            /* /Différentes qualités d'ascenseur */
+            /* /Calcul le nombre d'ascenseur selon la qualité */
+        
 
+            /* Fonction Commercial */
 function commercial()
         {
             RC_NB.value = CE_NB.value;
         };
+            /* /Fonction Commercial */
+
+            /* Fonction residential */
 function residential()
         {
             var ARE = AP_NB.value / FL_NB.value;
@@ -170,6 +198,9 @@ function residential()
             RC_NB.value = Math.ceil(RC_NB.value);
             console.log(RC_NB.value);
         };
+            /* /Fonction residential */
+
+            /* Fonction Corporate_Hybrid */
 function Corporate_Hybrid()
         { 
             var TH = parseInt(FL_NB.value) + parseInt(BS_NB.value);
@@ -185,6 +216,8 @@ function Corporate_Hybrid()
             var total = RC_NB.value = POOR * PTS;
             RC_NB.value = total;
         };
+            /* /Fonction Corporate_Hybrid */
+
 
 $("input").on('keyup click', function (){
         var VarType = $("#Building_Option option:selected").val();

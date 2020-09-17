@@ -23,6 +23,7 @@
 		<!-- PAGE LEVEL SCRIPTS -->
 		<link href="assets/css/header-1.css" rel="stylesheet" type="text/css" />
 		<link href="assets/css/color_scheme/blue.css" rel="stylesheet" type="text/css" id="color_scheme" />
+
 		<!-- PAGE BTN COLOR -->
 		<link href="Custom/Rocket Elevator.css" rel="stylesheet" type="text/css" />
 		<link href="Custom/darkgrey-ContactUs.css" rel="stylesheet" type="text/css" />
@@ -111,9 +112,11 @@
 
 				Example Usage:  class="clearfix sticky header-sm transparent b-0"
 			-->
+
+			<!-- TOP NAV -->
 			<div id="header" class="navbar-toggleable-md sticky header-sm transparent clearfix">
 
-				<!-- TOP NAV -->
+				
 				<header id="topNav">
 					<div class="container">
 
@@ -127,12 +130,7 @@
                             <img src="assets/images/Home/r2.png" alt="" />
 						</a>
 
-						<!-- 
-							Top Nav 
-							
-							AVAILABLE CLASSES:
-							submenu-dark = dark sub menu
-						-->
+						<!-- Top Nav	-->
 						<div class="navbar-collapse collapse float-right nav-main-collapse submenu-dark">
 							<nav class="nav-main">
 
@@ -143,13 +141,13 @@
 									Add .external for an external link!
 								-->
 								<ul id="topMain" class="nav nav-pills nav-main nav-onepage">
-									<li class="active">
 										<!-- HOME -->
+									<li class="active">
 										<a href="index.html" fs-50>
 											HOME
 										</a>
 									</li>
-									<!--SERVICES-->
+										<!--Services-->
 									<li class="dropddown">
 										<a class="dropdownMenuButton" href="index.html#services" fs-50 >
 											SERVICES
@@ -192,11 +190,12 @@
 
 							</nav>
 						</div>
-
+						<!-- /Top Nav -->
 					</div>
 				</header>
-				<!-- /Top Nav -->
+						
 			</div>
+			<!--/TOP NAV -->
 
 			<!-- HOME -->
 			<section id="home" class="h-450" style="background:url('assets/images/Quote/quote_elevator.jpg')">
@@ -219,9 +218,7 @@
 			</section>
 			<!-- /HOME -->
 
-				<!-- Get a Quote-->
-
-				<!-- Alert Success -->
+			<!-- Alert Success -->
 				<div id="alert_success" class="alert alert-success mb-30">
 					<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 					<strong>Thank You!</strong> Your message successfully sent!
@@ -267,56 +264,76 @@
 						 
 						<!-- CASE -->
 						<div class="botpage">
-							<div class="text-center"  id="ApartmentNumber">
+
+							<!--Number of Appartements-->
+							<div class="text-center"  id="ApartmentNumber"> 
 								<label >Number of Appartements ?</label>
 								<input  type="number" name="ApartmentNumberVar" class="form-control-sm"  min="0" id="ApartmentNumberVar">
 							</div>
+							<!--/Number of Appartements-->
 
+							<!--Number of Floors-->
 							<div class="text-center" id="FloorNumber">
 								<label >Number of Floors ?</label>
 								<input  type="number" name="FloorNumberVar" class="form-control-sm" min="0" id="FloorNumberVar">
 							</div>
+							<!--/Number of Floors-->
 
+							<!--Number of Basements-->
 							<div class="text-center" id="BasementNumber">
 								<label >Number of Basements ?</label>
 								<input  type="number" name="BasementNumberVar" class="form-control-sm" min="0" id="BasementNumberVar">
 							</div>
+							<!--/Number of Basements-->
 
+							<!--Number of Parking Space-->
 							<div class="text-center" id="ParkingNumber">
 								<label>Number of Parking Space ?</label>
 								<input  type="number" name="ParkingNumberVar" class="form-control-sm" min="0" id="ParkingNumberVar" >
 							</div>
+							<!--/Number of Parking Space-->
 
+							<!--Number of Elevator Cages-->
 							<div class="text-center" id = "CagEleNumber">
 								<label>Number of Elevator Cages ?</label>
 								<input  type="number" name="CagEleNumber1" class="form-control-sm" min="0" id = "CagEleNumber1">
 							</div>
+							<!--/Number of Elevator Cages-->
 
+							<!--Number of Maximum Occupants per Floors-->
 							<div class="text-center" id="OccupantNumber">
 								<label>Number of Maximum Occupants per Floors ?</label>
 								<input type="number" name="OccupantNumberVar" class="form-control-sm" min="0" id="OccupantNumberVar" >
 							</div>
+							<!--/Number of Maximum Occupants per Floors-->
 
+							<!--Number of Hours of Activity-->
 							<div class="text-center" id="HoursNumber">
 								<label>Number of Hours of Activity ? (Minimum 4 and Maximum 24)</label>
 								<input required type="number" name="HoursNumberVar" class="form-control-sm" min="4" max="24" id="HoursNumberVar">
 							</div>
+							<!--/Number of Hours of Activity-->
 
+							<!--The number of distinct businesses-->
 							<div class="text-center" id="distinct">
 								<label >The number of distinct businesses ?</label>
 								<input  type="number" class="form-control-sm" min="0" >
 							</div>
+							<!--/The number of distinct businesses-->
 
+							<!--The number of separate tenant companies-->
 							<div class="text-center" id="tenant">
 								<label >The number of separate tenant companies ?</label>
 								<input  type="number" class="form-control-sm" min="0" >
 							</div>
+							<!--/The number of separate tenant companies-->
 
+							<!--Recommended amount of elevators-->
 							<div class="text-center" id="RecommendEleNumber">
 								<label>Recommended amount of elevators ?</label>
 								<input  type="number" name="RecommendEleNumberVar" class= "form-control-sm" id="RecommendEleNumberVar" readonly>
 							</div>
-
+							<!--Recommended amount of elevators-->
 							
 
 							<div id="RadioType" class="col-md-12 text-center" style="display: none; font-size: 20px; color: black;">
@@ -357,12 +374,13 @@
 			
 			<!-- FOOTER -->
 			<footer id="footer">
+
 				<div class="container">
 
-
+						<!-- col #1 -->
 					<div class="row">
 
-						<!-- col #1 -->
+						
 						<div class="col-md-8">
 
 							<h3 class="letter-spacing-1">WHY US?</h3>
